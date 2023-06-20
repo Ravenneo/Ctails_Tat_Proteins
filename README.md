@@ -29,5 +29,28 @@ Content
     ·Etna2.py: Standalone version of Arcana's second part. Fetches protein information from NCBI's Entrez service given a list of accessions, and outputs a detailed table.
 
 
-
 These scripts are licensed under the GNU General Public License (GPL). For more information, please see the LICENSE file in this repository.
+
+
+# UPDATE
+20-July-2023
+
+## wanda.py 
+This Python script is designed for the purpose of retrieving and analyzing protein data from the NCBI databases. The script uses the Biopython library's Entrez module to access NCBI's Entrez databases, and fetches data about proteins based on their accession numbers.
+
+The script takes as input a CSV file containing a list of protein accession numbers. It uses the Entrez efetch method to fetch the data in TSV format for each protein in the list.
+
+The fetched data includes the following fields: 'ID', 'Source', 'Nucleotide Accession', 'Start', 'Stop', 'Strand', 'Protein', 'Protein Name', 'Organism', 'Strain', and 'Assembly'. The script writes this data to a new TSV file named efetch_output.tsv.
+
+During the data fetching and writing process, the script applies two filters to the data:
+
+    It ignores any proteins that are labeled as "hypothetical proteins".
+    It ensures that each protein ID only appears once in the output file, ignoring subsequent occurrences of the same ID.
+
+The script also keeps track of the organisms associated with the proteins. It counts the occurrences of each organism and writes these counts to a new file named organisms.txt. In both the console output and the file, the organisms are listed in descending order of their counts, from most to least.
+
+Finally, the script prints a message to the console to indicate that it has finished running.
+
+The script requires the Biopython and pandas libraries to run. It should be run from the command line with the name of the input CSV file as the argument. The email address used for the Entrez database queries is hard-coded into the script as "raven.neo@gmail.com" and may need to be changed to the user's own email address.
+
+Example usage: python3 script.py input.csv
