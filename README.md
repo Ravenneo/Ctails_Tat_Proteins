@@ -6,8 +6,8 @@ A repository containing the scripts used in my thesis:
 
 **Integration of tail-anchored proteins by the twin-arginine translocas**
 
+This repository contains Python scripts for bioinformatics analysis used in my thesis, specifically designed for protein sequence and assembly data. The scripts were authored and modified by Jose Jesus Gallego-Parrilla, Dr. Giusy Mariano, and Jorge Camarero Vera. The scripts were used with the data provided by Professor Tracy Palmer from Palmer Lab (Newcastle University). The repository is also cited in this paper research: [Identification of novel tail-anchored membrane proteins integrated by the bacterial twin-arginine translocase](https://www.microbiologyresearch.org/content/journal/micro/10.1099/mic.0.001431)
 
-This repository contains Python scripts for bioinformatics analysis used in my thesis, specifically designed for protein sequence and assembly data. The scripts were authored and modified by Jose Jesus Gallego-Parrillam Dr. Giusy Mariano and Jorge Camarero Vera. The scripts were used wiht the data provided by Profesor Tracy Palmer from Palmer Lab (Newcastle University)
 
 Content
 
