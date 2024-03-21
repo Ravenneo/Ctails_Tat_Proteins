@@ -51,6 +51,6 @@ The script also keeps track of the organisms associated with the proteins. It co
 
 Finally, the script prints a message to the console to indicate that it has finished running.
 
-The script requires the Biopython and pandas libraries to run. It should be run from the command line with the name of the input CSV file as the argument. The email address used for the Entrez database queries is hard-coded into the script as "raven.neo@gmail.com" and may need to be changed to the user's own email address.
+The script requires the Biopython and pandas libraries to run. It should be run from the command line with the name of the input CSV file as the argument. The email address used for the Entrez database queries is hard-coded into the script and need to be changed to the user's own email address.
 
 Example usage: python3 script.py input.csv
